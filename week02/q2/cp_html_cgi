@@ -1,0 +1,8 @@
+#! /bin/sh
+
+mkdir -p ~/public_html/html ~/public_html/cgi
+cd ~/my_project
+
+for i in html cgi ; do
+	cp -r $i/* ~/public_html/$i/
+done
