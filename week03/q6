@@ -1,0 +1,19 @@
+ #! /usr/bin/perl
+  use strict;
+  use warnings;
+
+print "Enter regexp:";
+my $regex = <STDIN>;
+
+print "Enter string or 'exit' to exit:";
+my $str - <STDIN>;
+
+if($str =~ /$regexp/){
+	print "Match!\n";
+}
+elsif{$str == 'exit');
+	die "bye bye!";
+}
+else{
+	print "No match!";
+}
