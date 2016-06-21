@@ -1,0 +1,10 @@
+ #! /usr/bin/perl
+  use strict;
+  use warnings;
+
+my @nuc = ('a', 't', 'c', 'g');
+
+for (my $i=0; $i<50; $i++){
+	my $base = int(rand @nuc);
+	print '$base';
+}
