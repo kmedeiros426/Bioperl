@@ -1,0 +1,13 @@
+ #! /usr/bin/perl
+  use strict;
+  use warnings;
+
+print "Enter length:";
+my $length = <STDIN>;
+
+print "Random length? y/n";
+my $answer = <STDIN>;
+
+if n, for with $i<$length+1
+
+if y, generate random number then for loop with $i<random
