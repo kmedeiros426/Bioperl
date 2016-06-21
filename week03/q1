@@ -1,0 +1,12 @@
+ #! /usr/bin/perl
+  use strict;
+  use warnings;
+
+for my $outer (1..12) {
+        for my $inner (1..12) {
+                my $answer = $inner * $outer;
+                print "$answer";
+                }
+        print "\n";
+}
+
