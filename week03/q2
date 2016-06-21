@@ -1,0 +1,15 @@
+ #! /usr/bin/perl
+  use strict;
+  use warnings;
+
+mult_table($x);
+
+sub mult_table{
+
+for my $outer (1..$x) {
+        for my $inner (1..$x) {
+                my $answer = $inner * $outer;
+                print "$answer";
+                }
+        print "\n";
+}
