@@ -1,7 +1,7 @@
 #! /opt/perl/bin/perl
   
-#    use strict;
-#      use warnings;
+    use strict;
+    use warnings;
 
 my %hoa=(
    white => ['chardonnay', 'moscato', 'riesling'],
