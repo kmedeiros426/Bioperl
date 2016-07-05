@@ -1,0 +1,7 @@
+Table mRNA: mrna ID (int), gene ID (int), tissue (varchar), expression level (int), orf start (int), orf stop (int)
+Table Gene: gene ID (int), gene name (varchar), organism ID (int), sequence (text)
+Table Organism: organism ID (int), organism name (varchar), tissue ID (int)
+
+Reasoning: Each mRNA is expressed from a single gene but it's attributes can be dependent on tissue type. So, mRNA is a unique entity with unique attributes.
+The genes themselves always have the same sequence regardless of what tissue they are in and the organism can have many tissue types. 
+Each attribute is only in one table and data is linked by using the unique identifiers from other tables.
