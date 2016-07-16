@@ -1,0 +1,11 @@
+sub max_num{
+   my $max = 0;
+   for (@_) { $max = $_ if $_>$max }
+   return $max;
+}
+
+sub min_num{
+   my $min = 0;
+   for (@_) { $min = $_ if $_ <$min }
+   return $min;
+}
