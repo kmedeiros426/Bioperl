@@ -20,4 +20,5 @@ has 'recogseq' => (
 sub cut_dna {
    my $dnaseq = @_;
    my @fragments = split /$recogseq/, $dnaseq;
+   return \@fragments;
 }
