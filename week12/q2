@@ -1,0 +1,45 @@
+CREATE TABLE friend (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  friend_name VARCHAR(255) NOT NULL,
+  friend_favcolor VARCHAR(255),
+  friend_gender VARCHAR(255) NOT NULL,  
+  friend_birth_month VARCHAR(255),
+  friend_birth_day, INTEGER,
+  friend_birth_year, INTEGER
+);
+
+
+CREATE TABLE gift (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  gift_name VARCHAR(255) NOT NULL,
+  gift_color VARCHAR(255),
+  category_id INTEGER NOT NULL,
+  retailer_id INTEGER NOT NULL
+);
+
+
+CREATE TABLE price (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  gift_id INTEGER NOT NULL,
+  retailer_id INTEGER NOT NULL,
+  price DECIMAL(9,2) NOT NULL
+);
+
+
+CREATE TABLE category (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  category_name VARCHAR(255) NOT NULL,
+  category_description VARCHAR(255)
+);
+
+
+CREATE TABLE retailer (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  retailer_name VARCHAR(255) NOT NULL,
+  retailer_address VARCHAR(255),
+  retailer_city VARCHAR(255),
+  retailer_state VARCHAR(255),
+  retailer_phone VARCHAR(255),
+  retailer_url VARCHAR(255),
+  category_id INTEGER NOR NULL
+);
